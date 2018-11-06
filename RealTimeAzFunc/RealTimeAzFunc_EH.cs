@@ -34,18 +34,14 @@ namespace RealTimeAzFunc
 
             log.LogInformation(eventGridEvent.Data.ToString());
 
-            //We need to decode from base64
-            //String fileLocation = Encoding.UTF8.GetString(Convert.FromBase64String(eventGridEvent.Data.ToString()));
-
             EventGridData eventGridData = JsonConvert.DeserializeObject<EventGridData>(eventGridEvent.Data.ToString());
             string fileUrl = eventGridData.url;
-
             log.LogInformation("fileUrl = "+fileUrl);
+
             //URL Decode it
             fileUrl = HttpUtility.UrlDecode(fileUrl);
-            string fileLocation = fileUrl.Substring(fileUrl.LastIndexOf('/') + 1);
-            fileLocation = fileUrl.Substring(69);
-            log.LogInformation("after fileLocation = " + fileLocation);
+            string fileLocation = fileUrl.Substring(fileUrl.LastIndexOf(CONTAINER_NAME) + CONTAINER_NAME.Length + 1);
+            log.LogInformation("fileLocation = " + fileLocation);
 
             //Get storage account
             CloudStorageAccount storageAccount = GetAccount();
@@ -62,6 +58,8 @@ namespace RealTimeAzFunc
 
             //Download blob
             await blob.DownloadToByteArrayAsync(output, 0);
+
+            log.LogInformation("Message sent to Event Hub - \n"+ Encoding.UTF8.GetString(output));
 
             //Return blob as string to Event Hub
             return Encoding.UTF8.GetString(output);
