@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "EventHubName": "<EVENT_HUB_NAME>",
+    "EventHubConnectionAppSetting": "<EVENT_HUB_CONN_STRING>",
+    "AzureBlobStorage": "<CONNECTION_STRING_AZURE_STORAGE_ACCOUNT>",
+    "CONTAINER_NAME": "<CONTAINER_NAME>"
+  }
+}
