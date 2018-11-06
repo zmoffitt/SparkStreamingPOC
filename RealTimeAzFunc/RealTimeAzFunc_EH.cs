@@ -2,11 +2,9 @@
 // http://localhost:7071/runtime/webhooks/EventGrid?functionName={functionname}
 
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Azure.EventGrid.Models;
 using Microsoft.Azure.WebJobs.Extensions.EventGrid;
 using Microsoft.Extensions.Logging;
-using Microsoft.Azure.EventHubs;
 using System.Text;
 using System.IO;
 using System;
@@ -32,37 +30,45 @@ namespace RealTimeAzFunc
                 throw new InvalidDataException("Message was empty");
             }
 
-            log.LogInformation(eventGridEvent.Data.ToString());
+            try
+            {
+                log.LogInformation(eventGridEvent.Data.ToString());
 
-            EventGridData eventGridData = JsonConvert.DeserializeObject<EventGridData>(eventGridEvent.Data.ToString());
-            string fileUrl = eventGridData.url;
-            log.LogInformation("fileUrl = "+fileUrl);
+                EventGridData eventGridData = JsonConvert.DeserializeObject<EventGridData>(eventGridEvent.Data.ToString());
+                string fileUrl = eventGridData.url;
+                log.LogInformation("fileUrl = "+fileUrl);
 
-            //URL Decode it
-            fileUrl = HttpUtility.UrlDecode(fileUrl);
-            string fileLocation = fileUrl.Substring(fileUrl.LastIndexOf(CONTAINER_NAME) + CONTAINER_NAME.Length + 1);
-            log.LogInformation("fileLocation = " + fileLocation);
+                //URL Decode it
+                fileUrl = HttpUtility.UrlDecode(fileUrl);
+                string fileLocation = fileUrl.Substring(fileUrl.LastIndexOf(CONTAINER_NAME) + CONTAINER_NAME.Length + 1);
+                log.LogInformation("fileLocation = " + fileLocation);
 
-            //Get storage account
-            CloudStorageAccount storageAccount = GetAccount();
+                //Get storage account
+                CloudStorageAccount storageAccount = GetAccount();
 
-            //Get a client and connection to the container
-            CloudBlobClient client = storageAccount.CreateCloudBlobClient();
-            CloudBlobContainer container = client.GetContainerReference(CONTAINER_NAME);
+                //Get a client and connection to the container
+                CloudBlobClient client = storageAccount.CreateCloudBlobClient();
+                CloudBlobContainer container = client.GetContainerReference(CONTAINER_NAME);
 
-            //Get blob file reference
-            CloudBlob blob = container.GetBlobReference(fileLocation);
+                //Get blob file reference
+                CloudBlob blob = container.GetBlobReference(fileLocation);
 
-            //Bring it down to a stream (async but wait for it)
-            Byte[] output = new byte[10000];
+                //Download blob (async but wait for it)
+                Byte[] output = new byte[10000];
+                await blob.DownloadToByteArrayAsync(output, 0);
 
-            //Download blob
-            await blob.DownloadToByteArrayAsync(output, 0);
+                log.LogInformation("Message sent to Event Hub - \n"+ Encoding.UTF8.GetString(output));
 
-            log.LogInformation("Message sent to Event Hub - \n"+ Encoding.UTF8.GetString(output));
+                //Return blob as string to Event Hub
+                return Encoding.UTF8.GetString(output);
+            }
+            catch (Exception ex)
+            {
+                log.LogError("Function failed with message "+ ex.Message);
+                throw;
+            }
 
-            //Return blob as string to Event Hub
-            return Encoding.UTF8.GetString(output);
+            
         }
 
         private static CloudStorageAccount GetAccount()
