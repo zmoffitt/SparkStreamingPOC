@@ -1,4 +1,6 @@
-﻿SELECT 
+﻿WITH cte as
+(
+SELECT 
     EH.Flight.EventId,
     EH.Flight.FlightCarrierCode,
     EH.Flight.FlightNumber,
@@ -25,8 +27,6 @@
     else 0 
         end as SchFlightIndicator,
     CAST(CFL.ArrayValue.ActualBlockMinutes as float) - cast(SFL.ArrayValue.ScheduledBlockMinutes as float) AS BlockVariance
-into    
-    SQLDatabase
 FROM 
     EventHub as EH
 LEFT JOIN
@@ -39,3 +39,22 @@ CROSS APPLY
     GetArrayElements(SFL.ArrayValue.CurrentFlightLeg) CFL
 CROSS APPLY
     GetArrayElements(SFL.ArrayValue.ActualFlightLeg) AFL
+)
+select
+    *
+into
+    SQLDatabase
+from
+    cte
+select
+    FlightOriginStnCode, 
+    FlightDestStnCode,
+    System.Timestamp as ts,
+    count(*) as WindowCount,
+    avg(BlockVariance) as AvgBlockVariance
+into    
+    PowerBI
+from
+    cte
+group by
+    FlightOriginStnCode, FlightDestStnCode, TUMBLINGWINDOW(hour, 1)

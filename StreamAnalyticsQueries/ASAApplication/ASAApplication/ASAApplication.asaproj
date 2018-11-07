@@ -31,7 +31,10 @@
     <Configure Include="JobConfig.json">
       <SubType>JobConfig</SubType>
     </Configure>
-    <Configure Include="Outputs\Output1.json">
+    <Configure Include="Outputs\PowerBI.json">
+      <SubType>Output</SubType>
+    </Configure>
+    <Configure Include="Outputs\SqlDatabase.json">
       <SubType>Output</SubType>
     </Configure>
   </ItemGroup>
