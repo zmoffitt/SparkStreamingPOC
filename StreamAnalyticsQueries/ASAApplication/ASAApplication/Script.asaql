@@ -5,9 +5,9 @@
     EH.Flight.EventTimeStamp,
     EH.Flight.EventSubType,
     EH.Flight.FlightOriginStnCode,
-    Origin.International as OriginCode_IsInternational,
+    cast(Origin.International as bigint) as OriginCode_IsInternational,
     EH.Flight.FlightDestStnCode,
-    Dest.International as DestinationCode_IsInternational,
+    cast(Dest.International as bigint) as DestinationCode_IsInternational,
     CASE 
         WHEN SFL.ArrayValue.Status = 'CANCELLED' THEN 1 
         ELSE 0 
