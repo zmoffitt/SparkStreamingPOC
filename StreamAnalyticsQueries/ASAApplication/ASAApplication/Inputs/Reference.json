@@ -1,0 +1,30 @@
+﻿{
+  "Sample": null,
+  "EventHubProperties": null,
+  "BlobStorageProperties": null,
+  "IoTHubProperties": null,
+  "BlobReferenceProperties": {
+    "Container": "rtflights",
+    "DateFormat": "yyyy/MM/dd",
+    "PathPattern": "location_Intl.csv",
+    "StorageAccounts": [
+      {
+        "AccountKey": null,
+        "AccountName": "jberflightsrealtime"
+      }
+    ],
+    "TimeFormat": "HH"
+  },
+  "DataSourceCredentialDomain": "3d6831f7-1c1a-4253-a450-e11bb59e8606.StreamAnalyticsCredential",
+  "Name": "Reference",
+  "Type": "Reference data",
+  "DataSourceType": "Blob Storage",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Csv",
+    "FieldDelimiter": ",",
+    "Format": null
+  },
+  "CompresssionType": null,
+  "ScriptType": "Input"
+}

@@ -1,0 +1,1323 @@
+﻿[{
+  "partition_key": "B6_0020",
+  "BLOB_NAME": "2018/11/20181101001154281.B6002020181103SAN10.2_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "SecureFlightIndicator": "true",
+        "SourceSystemName": "SchedMgr",
+        "OriginatorFlightIndicator": "N",
+        "DomesticArrStnIndictor": "Y",
+        "SchAcftConfig": "C16Y143",
+        "DepTerminal": "2",
+        "OnTimePerfValue": "7",
+        "DomesticDepStnIndictor": "Y",
+        "ServiceType": "J",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "SCH",
+        "FlightType": "SCH",
+        "ScheduledGroundMinutes": "85",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "5887",
+            "FlightSegDestLocalDateTime": "2018-11-04T01:24:00-08:00",
+            "SourceSystemName": "SchedMgr",
+            "SourceMessageType": "SCH",
+            "MarketingCarrierCode": "JL",
+            "FlightSegDestAirport": "BOS",
+            "FlightSegOriginLocalDateTime": "2018-11-03T21:10:00-07:00",
+            "FlightSegOriginLocalDate": "2018-11-03",
+            "SourceUpdateDateTime": "2018-10-29T19:56:00Z",
+            "FlightSegOriginAirport": "SAN"
+          },
+          {
+            "MarketingFlightNumber": "0020",
+            "FlightSegDestLocalDateTime": "2018-11-04T01:24:00-08:00",
+            "SourceSystemName": "SchedMgr",
+            "SourceMessageType": "SCH",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "BOS",
+            "FlightSegOriginLocalDateTime": "2018-11-03T21:10:00-07:00",
+            "FlightSegOriginLocalDate": "2018-11-03",
+            "SourceUpdateDateTime": "2018-10-29T19:56:00Z",
+            "FlightSegOriginAirport": "SAN"
+          }
+        ],
+        "SchOnwardFlightCarrierCode": "B6",
+        "Status": "ON TIME",
+        "SchOnwardFlightNumber": "0833",
+        "SchLocalDepDateTime": "2018-11-03T21:10:00-07:00",
+        "ScheduledBlockMinutes": "314",
+        "SchDepStnCode": "SAN",
+        "SchLocalDepDate": "2018-11-03",
+        "SchLocalArrDateTime": "2018-11-04T01:24:00-08:00",
+        "ArrTerminal": "C",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0",
+            "CurrentArrivalTerminal": "C",
+            "ActualDepartureDelayMinutes": "0",
+            "DispatchDesk": "DM",
+            "BlueTurnIndicator": "N",
+            "EstimatedDepartureDelayMinutes": "0",
+            "ActualEquipmentType": "32S",
+            "TurnTime": "60",
+            "DoorCloseTime": "08:55 PM",
+            "EstLocalArrDateTime": "2018-11-04T01:24:00-08:00",
+            "TailNumber": "985",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-04T01:24:00-08:00",
+            "DepProgress": "S",
+            "EstimatedGroundMinutes": "85",
+            "EstLocalBoardingDateTime": "2018-11-03T20:35:00-07:00",
+            "CurrentDepartureTerminal": "2",
+            "ActualArrivalDelayMinutes": "0",
+            "CurrentDepStnCode": "SAN",
+            "RON": "false",
+            "ActualBlockMinutes": "0",
+            "AcftRegNumber": "N985JT",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-03T21:10:00-07:00",
+            "ATCStatus": "0",
+            "FleetLaunchFlightIndicator": "N",
+            "CurrentArrStnCode": "BOS",
+            "EstimatedArrivalDelayMinutes": "0",
+            "EstLocalDepDateTime": "2018-11-03T21:10:00-07:00",
+            "SourceUpdateDateTime": "2018-10-27T09:05:00Z"
+          }
+        ],
+        "SchArrStnCode": "BOS",
+        "RON": "false",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "SAN",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-04T01:24:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-03T21:10:00-07:00",
+            "ArrStnCode": "BOS",
+            "LocalDepDate": "2018-11-03",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "EstLocalPubDepDateTime": "2018-11-03T21:10:00-07:00",
+            "TailNumber": "985",
+            "SourceMessageType": "ADH",
+            "SourceFlightLegId": "0005048225",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "ERIV",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "AcftRegNumber": "N985JT",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-10-27T09:05:00Z",
+            "EstLocalPubArrDateTime": "2018-11-04T01:24:00-08:00",
+            "EqpmtType": "32S"
+          }
+        ],
+        "FleetLaunchFlightIndicator": "N",
+        "OnTimePerfPeriod": "JUL18",
+        "SourceUpdateDateTime": "2018-10-29T19:56:00Z",
+        "EqpmtType": "32S"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "0020",
+    "EventId": "20181101001154281.B6002020181103SAN10.2",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "SAN",
+    "EventTimeStamp": "2018-11-01T21:11:54.282-07:00",
+    "FlightOriginLocalDate": "2018-11-03",
+    "FlightDestStnCode": "BOS",
+    "EventSubType": "|FlightDepNotification",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_0020_2018-11-03"
+},{
+  "partition_key": "B6_7799",
+  "BLOB_NAME": "2018/11/20181106145043346.B6779920181106SJU10.1_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "Status": "ON TIME",
+        "SchLocalDepDateTime": "2018-11-06T02:30:00-08:00",
+        "ScheduledBlockMinutes": "60",
+        "SchDepStnCode": "SJU",
+        "SchLocalDepDate": "2018-11-06",
+        "SecureFlightIndicator": "false",
+        "SchLocalArrDateTime": "2018-11-06T03:30:00-08:00",
+        "SourceSystemName": "FliteTrac",
+        "OriginatorFlightIndicator": "N",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0",
+            "ActualDepartureDelayMinutes": "0",
+            "DispatchDesk": "DM",
+            "BlueTurnIndicator": "N",
+            "EstimatedDepartureDelayMinutes": "0",
+            "ActualEquipmentType": "32M",
+            "TurnTime": "0",
+            "DoorCloseTime": "06:15 AM",
+            "TailNumber": "571",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-06T03:30:00-08:00",
+            "DepProgress": "S",
+            "EstimatedGroundMinutes": "30",
+            "EstLocalBoardingDateTime": "Boarding Shortly",
+            "ActualArrivalDelayMinutes": "0",
+            "CurrentDepStnCode": "SJU",
+            "RON": "false",
+            "ActualBlockMinutes": "0",
+            "AcftRegNumber": "N571JB",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-06T02:30:00-08:00",
+            "ATCStatus": "0",
+            "FleetLaunchFlightIndicator": "N",
+            "CurrentArrStnCode": "SDQ",
+            "EstimatedArrivalDelayMinutes": "0",
+            "SourceUpdateDateTime": "2018-11-06T19:49:00Z"
+          }
+        ],
+        "SourceMessageDateTime": "2018-11-06T19:50:00Z",
+        "SchArrStnCode": "SDQ",
+        "RON": "false",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "SJU",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-06T03:30:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-06T02:30:00-08:00",
+            "ArrStnCode": "SDQ",
+            "LocalDepDate": "2018-11-06",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "TailNumber": "571",
+            "SourceMessageType": "NEW",
+            "SourceFlightLegId": "0005120182",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "POST",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "SourceMessageDateTime": "2018-11-06T19:50:00Z",
+            "CompartmentId": "Y",
+            "AcftRegNumber": "N571JB",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-11-06T19:49:00Z",
+            "EqpmtType": "32M"
+          }
+        ],
+        "ServiceType": "J",
+        "FleetLaunchFlightIndicator": "N",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "NEW",
+        "FlightType": "SCH",
+        "ScheduledGroundMinutes": "30",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "7799",
+            "FlightSegDestLocalDateTime": "2018-11-06T03:30:00-08:00",
+            "SourceSystemName": "FliteTrac",
+            "SourceMessageType": "NEW",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "SDQ",
+            "FlightSegOriginLocalDateTime": "2018-11-06T02:30:00-08:00",
+            "FlightSegOriginLocalDate": "2018-11-06",
+            "SourceUpdateDateTime": "2018-11-06T19:49:00Z",
+            "FlightSegOriginAirport": "SJU",
+            "SourceMessageDateTime": "2018-11-06T19:50:00Z"
+          }
+        ],
+        "SourceUpdateDateTime": "2018-11-06T19:49:00Z",
+        "EqpmtType": "32M"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "7799",
+    "EventId": "20181106145043346.B6779920181106SJU10.1",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "SJU",
+    "EventTimeStamp": "2018-11-06T11:50:43.347-08:00",
+    "FlightOriginLocalDate": "2018-11-06",
+    "FlightDestStnCode": "SDQ",
+    "EventSubType": "|NewFlight",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_7799_2018-11-06"
+},{
+  "partition_key": "B6_2211",
+  "BLOB_NAME": "2018/11/20181106145643108.B6221120181106FLL10.1_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "Status": "ON TIME",
+        "SchLocalDepDateTime": "2018-11-06T04:00:00-08:00",
+        "ScheduledBlockMinutes": "60",
+        "SchDepStnCode": "FLL",
+        "SchLocalDepDate": "2018-11-06",
+        "SecureFlightIndicator": "false",
+        "SchLocalArrDateTime": "2018-11-06T05:00:00-08:00",
+        "SourceSystemName": "FliteTrac",
+        "OriginatorFlightIndicator": "N",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0",
+            "ActualDepartureDelayMinutes": "0",
+            "DispatchDesk": "DM",
+            "BlueTurnIndicator": "N",
+            "EstimatedDepartureDelayMinutes": "0",
+            "ActualEquipmentType": "E90",
+            "TurnTime": "0",
+            "DoorCloseTime": "06:45 AM",
+            "TailNumber": "184",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-06T05:00:00-08:00",
+            "DepProgress": "S",
+            "EstLocalBoardingDateTime": "Boarding Shortly",
+            "ActualArrivalDelayMinutes": "0",
+            "CurrentDepStnCode": "FLL",
+            "RON": "true",
+            "ActualBlockMinutes": "0",
+            "AcftRegNumber": "N184JB",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-06T04:00:00-08:00",
+            "ATCStatus": "0",
+            "FleetLaunchFlightIndicator": "Y",
+            "CurrentArrStnCode": "BOS",
+            "EstimatedArrivalDelayMinutes": "0",
+            "SourceUpdateDateTime": "2018-11-06T19:55:00Z"
+          }
+        ],
+        "SourceMessageDateTime": "2018-11-06T19:56:00Z",
+        "SchArrStnCode": "BOS",
+        "RON": "true",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "FLL",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-06T05:00:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-06T04:00:00-08:00",
+            "ArrStnCode": "BOS",
+            "LocalDepDate": "2018-11-06",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "TailNumber": "184",
+            "SourceMessageType": "NEW",
+            "SourceFlightLegId": "0005120183",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "POST",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "SourceMessageDateTime": "2018-11-06T19:56:00Z",
+            "CompartmentId": "Y",
+            "AcftRegNumber": "N184JB",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-11-06T19:55:00Z",
+            "EqpmtType": "E90"
+          }
+        ],
+        "ServiceType": "J",
+        "FleetLaunchFlightIndicator": "Y",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "NEW",
+        "FlightType": "SCH",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "2211",
+            "FlightSegDestLocalDateTime": "2018-11-06T05:00:00-08:00",
+            "SourceSystemName": "FliteTrac",
+            "SourceMessageType": "NEW",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "BOS",
+            "FlightSegOriginLocalDateTime": "2018-11-06T04:00:00-08:00",
+            "FlightSegOriginLocalDate": "2018-11-06",
+            "SourceUpdateDateTime": "2018-11-06T19:55:00Z",
+            "FlightSegOriginAirport": "FLL",
+            "SourceMessageDateTime": "2018-11-06T19:56:00Z"
+          }
+        ],
+        "SourceUpdateDateTime": "2018-11-06T19:55:00Z",
+        "EqpmtType": "E90"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "2211",
+    "EventId": "20181106145643108.B6221120181106FLL10.1",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "FLL",
+    "EventTimeStamp": "2018-11-06T11:56:43.109-08:00",
+    "FlightOriginLocalDate": "2018-11-06",
+    "FlightDestStnCode": "BOS",
+    "EventSubType": "|NewFlight",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_2211_2018-11-06"
+},{
+  "partition_key": "B6_2222",
+  "BLOB_NAME": "2018/11/20181106145728766.B6222220181106BOS10.2_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "SecureFlightIndicator": "false",
+        "SourceSystemName": "FliteTrac",
+        "OriginatorFlightIndicator": "N",
+        "DomesticArrStnIndictor": "N",
+        "DomesticDepStnIndictor": "Y",
+        "ServiceType": "J",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "NEW",
+        "FlightType": "SCH",
+        "ScheduledGroundMinutes": "60",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "2222",
+            "FlightSegDestLocalDateTime": "2018-11-06T07:00:00-08:00",
+            "SourceSystemName": "FliteTrac",
+            "SourceMessageType": "NEW",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "SDQ",
+            "FlightSegOriginLocalDateTime": "2018-11-06T06:00:00-08:00",
+            "FlightSegOriginLocalDate": "2018-11-06",
+            "SourceUpdateDateTime": "2018-11-06T19:56:00Z",
+            "FlightSegOriginAirport": "BOS",
+            "SourceMessageDateTime": "2018-11-06T19:56:00Z"
+          }
+        ],
+        "Status": "ON TIME",
+        "SchLocalDepDateTime": "2018-11-06T06:00:00-08:00",
+        "ScheduledBlockMinutes": "60",
+        "SchDepStnCode": "BOS",
+        "SchLocalDepDate": "2018-11-06",
+        "SchLocalArrDateTime": "2018-11-06T07:00:00-08:00",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0",
+            "ActualDepartureDelayMinutes": "0",
+            "DispatchDesk": "DM",
+            "BlueTurnIndicator": "N",
+            "EstimatedDepartureDelayMinutes": "0",
+            "ActualEquipmentType": "E90",
+            "TurnTime": "55",
+            "DoorCloseTime": "08:45 AM",
+            "TailNumber": "184",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-06T07:00:00-08:00",
+            "DepProgress": "S",
+            "EstimatedGroundMinutes": "60",
+            "EstLocalBoardingDateTime": "Boarding Shortly",
+            "ActualArrivalDelayMinutes": "0",
+            "CurrentDepStnCode": "BOS",
+            "RON": "true",
+            "ActualBlockMinutes": "0",
+            "AcftRegNumber": "N184JB",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-06T06:00:00-08:00",
+            "ATCStatus": "0",
+            "FleetLaunchFlightIndicator": "N",
+            "CurrentArrStnCode": "SDQ",
+            "EstimatedArrivalDelayMinutes": "0",
+            "SourceUpdateDateTime": "2018-11-06T19:56:00Z"
+          }
+        ],
+        "SourceMessageDateTime": "2018-11-06T19:56:00Z",
+        "SchArrStnCode": "SDQ",
+        "RON": "true",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "BOS",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-06T07:00:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-06T06:00:00-08:00",
+            "ArrStnCode": "SDQ",
+            "LocalDepDate": "2018-11-06",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "TailNumber": "184",
+            "SourceMessageType": "NEW",
+            "SourceFlightLegId": "0005120184",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "POST",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "SourceMessageDateTime": "2018-11-06T19:56:00Z",
+            "CompartmentId": "Y",
+            "AcftRegNumber": "N184JB",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-11-06T19:56:00Z",
+            "EqpmtType": "E90"
+          }
+        ],
+        "FleetLaunchFlightIndicator": "N",
+        "SourceUpdateDateTime": "2018-11-06T19:56:00Z",
+        "EqpmtType": "E90"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "2222",
+    "EventId": "20181106145728766.B6222220181106BOS10.2",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "BOS",
+    "EventTimeStamp": "2018-11-06T11:57:28.766-08:00",
+    "FlightOriginLocalDate": "2018-11-06",
+    "FlightDestStnCode": "SDQ",
+    "EventSubType": "|TurnTime",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_2222_2018-11-06"
+},{
+  "partition_key": "B6_2233",
+  "BLOB_NAME": "2018/11/20181106150558125.B6223320181107SDQ10.1_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "Status": "ON TIME",
+        "SchLocalDepDateTime": "2018-11-07T04:00:00-08:00",
+        "ScheduledBlockMinutes": "60",
+        "SchDepStnCode": "SDQ",
+        "SchLocalDepDate": "2018-11-07",
+        "SecureFlightIndicator": "false",
+        "SchLocalArrDateTime": "2018-11-07T05:00:00-08:00",
+        "SourceSystemName": "FliteTrac",
+        "OriginatorFlightIndicator": "N",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0",
+            "ActualDepartureDelayMinutes": "0",
+            "DispatchDesk": "DM",
+            "BlueTurnIndicator": "N",
+            "EstimatedDepartureDelayMinutes": "0",
+            "ActualEquipmentType": "320",
+            "TurnTime": "0",
+            "DoorCloseTime": "07:45 AM",
+            "TailNumber": "504",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-07T05:00:00-08:00",
+            "DepProgress": "S",
+            "EstLocalBoardingDateTime": "2018-11-07T03:25:00-08:00",
+            "ActualArrivalDelayMinutes": "0",
+            "CurrentDepStnCode": "SDQ",
+            "RON": "true",
+            "ActualBlockMinutes": "0",
+            "AcftRegNumber": "N504JB",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-07T04:00:00-08:00",
+            "ATCStatus": "0",
+            "FleetLaunchFlightIndicator": "Y",
+            "CurrentArrStnCode": "BOS",
+            "EstimatedArrivalDelayMinutes": "0",
+            "SourceUpdateDateTime": "2018-11-06T20:05:00Z"
+          }
+        ],
+        "SourceMessageDateTime": "2018-11-06T20:05:00Z",
+        "SchArrStnCode": "BOS",
+        "RON": "true",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "SDQ",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-07T05:00:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-07T04:00:00-08:00",
+            "ArrStnCode": "BOS",
+            "LocalDepDate": "2018-11-07",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "TailNumber": "504",
+            "SourceMessageType": "NEW",
+            "SourceFlightLegId": "0005120185",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "POST",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "SourceMessageDateTime": "2018-11-06T20:05:00Z",
+            "CompartmentId": "Y",
+            "AcftRegNumber": "N504JB",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-11-06T20:05:00Z",
+            "EqpmtType": "320"
+          }
+        ],
+        "ServiceType": "J",
+        "FleetLaunchFlightIndicator": "Y",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "NEW",
+        "FlightType": "SCH",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "2233",
+            "FlightSegDestLocalDateTime": "2018-11-07T05:00:00-08:00",
+            "SourceSystemName": "FliteTrac",
+            "SourceMessageType": "NEW",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "BOS",
+            "FlightSegOriginLocalDateTime": "2018-11-07T04:00:00-08:00",
+            "FlightSegOriginLocalDate": "2018-11-07",
+            "SourceUpdateDateTime": "2018-11-06T20:05:00Z",
+            "FlightSegOriginAirport": "SDQ",
+            "SourceMessageDateTime": "2018-11-06T20:05:00Z"
+          }
+        ],
+        "SourceUpdateDateTime": "2018-11-06T20:05:00Z",
+        "EqpmtType": "320"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "2233",
+    "EventId": "20181106150558125.B6223320181107SDQ10.1",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "SDQ",
+    "EventTimeStamp": "2018-11-06T12:05:58.126-08:00",
+    "FlightOriginLocalDate": "2018-11-07",
+    "FlightDestStnCode": "BOS",
+    "EventSubType": "|NewFlight",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_2233_2018-11-07"
+},{
+  "partition_key": "B6_0008",
+  "BLOB_NAME": "2018/11/20181105021348058.B6000820181112LAS10.1_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "SecureFlightIndicator": "true",
+        "SourceSystemName": "SchedMgr",
+        "SchAcftConfig": "Y150",
+        "DepTerminal": "3",
+        "OnTimePerfValue": "5",
+        "ServiceType": "J",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "SCH",
+        "FlightType": "SCH",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "0008",
+            "FlightSegDestLocalDateTime": "2018-11-13T02:02:00-08:00",
+            "SourceSystemName": "SchedMgr",
+            "SourceMessageType": "SCH",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "FLL",
+            "FlightSegOriginLocalDateTime": "2018-11-12T21:33:00-08:00",
+            "FlightSegOriginLocalDate": "2018-11-12",
+            "SourceUpdateDateTime": "2018-11-05T02:03:24Z",
+            "FlightSegOriginAirport": "LAS"
+          }
+        ],
+        "SchOnwardFlightCarrierCode": "B6",
+        "Status": "ON TIME",
+        "SchOnwardFlightNumber": "1680",
+        "SchLocalDepDateTime": "2018-11-12T21:33:00-08:00",
+        "ScheduledBlockMinutes": "269.0",
+        "SchDepStnCode": "LAS",
+        "SchLocalDepDate": "2018-11-12",
+        "SchLocalArrDateTime": "2018-11-13T02:02:00-08:00",
+        "ArrTerminal": "3",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0.0",
+            "CurrentArrivalTerminal": "3",
+            "ActualDepartureDelayMinutes": "0.0",
+            "DispatchDesk": "DM",
+            "EstimatedDepartureDelayMinutes": "0.0",
+            "ActualEquipmentType": "32H",
+            "TurnTime": "0",
+            "DoorCloseTime": "09:18 PM",
+            "EstLocalArrDateTime": "2018-11-13T02:02:00-08:00",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-13T02:02:00-08:00",
+            "DepProgress": "S",
+            "EstLocalBoardingDateTime": "2018-11-12T20:58:00-08:00",
+            "CurrentDepartureTerminal": "3",
+            "ActualArrivalDelayMinutes": "0.0",
+            "CurrentDepStnCode": "LAS",
+            "RON": "false",
+            "ActualBlockMinutes": "0.0",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-12T21:33:00-08:00",
+            "ATCStatus": "0",
+            "CurrentArrStnCode": "FLL",
+            "EstimatedArrivalDelayMinutes": "0.0",
+            "EstLocalDepDateTime": "2018-11-12T21:33:00-08:00",
+            "SourceUpdateDateTime": "2018-09-28T10:28:00Z"
+          }
+        ],
+        "SchArrStnCode": "FLL",
+        "RON": "false",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "LAS",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-13T02:02:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-12T21:33:00-08:00",
+            "ArrStnCode": "FLL",
+            "LocalDepDate": "2018-11-12",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "EstLocalPubDepDateTime": "2018-11-12T21:33:00-08:00",
+            "SourceMessageType": "ADH",
+            "SourceFlightLegId": "0005059001",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "LISA",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-09-28T10:28:00Z",
+            "EstLocalPubArrDateTime": "2018-11-13T02:02:00-08:00",
+            "EqpmtType": "32H"
+          }
+        ],
+        "OnTimePerfPeriod": "JUL18",
+        "SourceUpdateDateTime": "2018-11-05T02:03:24Z",
+        "EqpmtType": "32H"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "0008",
+    "EventId": "20181105021348058.B6000820181112LAS10.1",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "LAS",
+    "EventTimeStamp": "2018-11-04T23:13:48.058-08:00",
+    "FlightOriginLocalDate": "2018-11-12",
+    "FlightDestStnCode": "FLL",
+    "EventSubType": "|FlightLoaded",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_0008_2018-11-12"
+},{
+  "partition_key": "B6_7788",
+  "BLOB_NAME": "2018/11/20181106144958447.B6778820181106BOS10.1_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "Status": "ON TIME",
+        "SchLocalDepDateTime": "2018-11-06T01:00:00-08:00",
+        "ScheduledBlockMinutes": "60",
+        "SchDepStnCode": "BOS",
+        "SchLocalDepDate": "2018-11-06",
+        "SecureFlightIndicator": "false",
+        "SchLocalArrDateTime": "2018-11-06T02:00:00-08:00",
+        "SourceSystemName": "FliteTrac",
+        "OriginatorFlightIndicator": "N",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0",
+            "ActualDepartureDelayMinutes": "0",
+            "DispatchDesk": "DM",
+            "BlueTurnIndicator": "N",
+            "EstimatedDepartureDelayMinutes": "0",
+            "ActualEquipmentType": "32M",
+            "TurnTime": "0",
+            "DoorCloseTime": "03:45 AM",
+            "TailNumber": "571",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-06T02:00:00-08:00",
+            "DepProgress": "S",
+            "EstimatedGroundMinutes": "1080",
+            "EstLocalBoardingDateTime": "Boarding Shortly",
+            "ActualArrivalDelayMinutes": "0",
+            "CurrentDepStnCode": "BOS",
+            "RON": "false",
+            "ActualBlockMinutes": "0",
+            "AcftRegNumber": "N571JB",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-06T01:00:00-08:00",
+            "ATCStatus": "0",
+            "FleetLaunchFlightIndicator": "Y",
+            "CurrentArrStnCode": "SJU",
+            "EstimatedArrivalDelayMinutes": "0",
+            "SourceUpdateDateTime": "2018-11-06T19:49:00Z"
+          }
+        ],
+        "SourceMessageDateTime": "2018-11-06T19:49:00Z",
+        "SchArrStnCode": "SJU",
+        "RON": "false",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "BOS",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-06T02:00:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-06T01:00:00-08:00",
+            "ArrStnCode": "SJU",
+            "LocalDepDate": "2018-11-06",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "TailNumber": "571",
+            "SourceMessageType": "NEW",
+            "SourceFlightLegId": "0005120181",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "POST",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "SourceMessageDateTime": "2018-11-06T19:49:00Z",
+            "CompartmentId": "Y",
+            "AcftRegNumber": "N571JB",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-11-06T19:49:00Z",
+            "EqpmtType": "32M"
+          }
+        ],
+        "ServiceType": "J",
+        "FleetLaunchFlightIndicator": "Y",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "NEW",
+        "FlightType": "SCH",
+        "ScheduledGroundMinutes": "1080",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "7788",
+            "FlightSegDestLocalDateTime": "2018-11-06T02:00:00-08:00",
+            "SourceSystemName": "FliteTrac",
+            "SourceMessageType": "NEW",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "SJU",
+            "FlightSegOriginLocalDateTime": "2018-11-06T01:00:00-08:00",
+            "FlightSegOriginLocalDate": "2018-11-06",
+            "SourceUpdateDateTime": "2018-11-06T19:49:00Z",
+            "FlightSegOriginAirport": "BOS",
+            "SourceMessageDateTime": "2018-11-06T19:49:00Z"
+          }
+        ],
+        "SourceUpdateDateTime": "2018-11-06T19:49:00Z",
+        "EqpmtType": "32M"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "7788",
+    "EventId": "20181106144958447.B6778820181106BOS10.1",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "BOS",
+    "EventTimeStamp": "2018-11-06T11:49:58.447-08:00",
+    "FlightOriginLocalDate": "2018-11-06",
+    "FlightDestStnCode": "SJU",
+    "EventSubType": "|NewFlight",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_7788_2018-11-06"
+},{
+  "partition_key": "B6_7799",
+  "BLOB_NAME": "2018/11/20181106145043847.B6779920181106SJU10.2_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "SecureFlightIndicator": "false",
+        "SourceSystemName": "FliteTrac",
+        "OriginatorFlightIndicator": "N",
+        "DomesticArrStnIndictor": "N",
+        "DomesticDepStnIndictor": "Y",
+        "ServiceType": "J",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "NEW",
+        "FlightType": "SCH",
+        "ScheduledGroundMinutes": "30",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "7799",
+            "FlightSegDestLocalDateTime": "2018-11-06T03:30:00-08:00",
+            "SourceSystemName": "FliteTrac",
+            "SourceMessageType": "NEW",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "SDQ",
+            "FlightSegOriginLocalDateTime": "2018-11-06T02:30:00-08:00",
+            "FlightSegOriginLocalDate": "2018-11-06",
+            "SourceUpdateDateTime": "2018-11-06T19:49:00Z",
+            "FlightSegOriginAirport": "SJU",
+            "SourceMessageDateTime": "2018-11-06T19:50:00Z"
+          }
+        ],
+        "Status": "ON TIME",
+        "SchLocalDepDateTime": "2018-11-06T02:30:00-08:00",
+        "ScheduledBlockMinutes": "60",
+        "SchDepStnCode": "SJU",
+        "SchLocalDepDate": "2018-11-06",
+        "SchLocalArrDateTime": "2018-11-06T03:30:00-08:00",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0",
+            "ActualDepartureDelayMinutes": "0",
+            "DispatchDesk": "DM",
+            "BlueTurnIndicator": "N",
+            "EstimatedDepartureDelayMinutes": "0",
+            "ActualEquipmentType": "32M",
+            "TurnTime": "80",
+            "DoorCloseTime": "06:15 AM",
+            "TailNumber": "571",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-06T03:30:00-08:00",
+            "DepProgress": "S",
+            "EstimatedGroundMinutes": "30",
+            "EstLocalBoardingDateTime": "Boarding Shortly",
+            "ActualArrivalDelayMinutes": "0",
+            "CurrentDepStnCode": "SJU",
+            "RON": "false",
+            "ActualBlockMinutes": "0",
+            "AcftRegNumber": "N571JB",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-06T02:30:00-08:00",
+            "ATCStatus": "0",
+            "FleetLaunchFlightIndicator": "N",
+            "CurrentArrStnCode": "SDQ",
+            "EstimatedArrivalDelayMinutes": "0",
+            "SourceUpdateDateTime": "2018-11-06T19:49:00Z"
+          }
+        ],
+        "SourceMessageDateTime": "2018-11-06T19:50:00Z",
+        "SchArrStnCode": "SDQ",
+        "RON": "false",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "SJU",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-06T03:30:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-06T02:30:00-08:00",
+            "ArrStnCode": "SDQ",
+            "LocalDepDate": "2018-11-06",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "TailNumber": "571",
+            "SourceMessageType": "NEW",
+            "SourceFlightLegId": "0005120182",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "POST",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "SourceMessageDateTime": "2018-11-06T19:50:00Z",
+            "CompartmentId": "Y",
+            "AcftRegNumber": "N571JB",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-11-06T19:49:00Z",
+            "EqpmtType": "32M"
+          }
+        ],
+        "FleetLaunchFlightIndicator": "N",
+        "SourceUpdateDateTime": "2018-11-06T19:49:00Z",
+        "EqpmtType": "32M"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "7799",
+    "EventId": "20181106145043847.B6779920181106SJU10.2",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "SJU",
+    "EventTimeStamp": "2018-11-06T11:50:43.848-08:00",
+    "FlightOriginLocalDate": "2018-11-06",
+    "FlightDestStnCode": "SDQ",
+    "EventSubType": "|TurnTime",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_7799_2018-11-06"
+},{
+  "partition_key": "B6_2211",
+  "BLOB_NAME": "2018/11/20181106145643108.B6221120181106FLL10.1_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "Status": "ON TIME",
+        "SchLocalDepDateTime": "2018-11-06T04:00:00-08:00",
+        "ScheduledBlockMinutes": "60",
+        "SchDepStnCode": "FLL",
+        "SchLocalDepDate": "2018-11-06",
+        "SecureFlightIndicator": "false",
+        "SchLocalArrDateTime": "2018-11-06T05:00:00-08:00",
+        "SourceSystemName": "FliteTrac",
+        "OriginatorFlightIndicator": "N",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0",
+            "ActualDepartureDelayMinutes": "0",
+            "DispatchDesk": "DM",
+            "BlueTurnIndicator": "N",
+            "EstimatedDepartureDelayMinutes": "0",
+            "ActualEquipmentType": "E90",
+            "TurnTime": "0",
+            "DoorCloseTime": "06:45 AM",
+            "TailNumber": "184",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-06T05:00:00-08:00",
+            "DepProgress": "S",
+            "EstLocalBoardingDateTime": "Boarding Shortly",
+            "ActualArrivalDelayMinutes": "0",
+            "CurrentDepStnCode": "FLL",
+            "RON": "true",
+            "ActualBlockMinutes": "0",
+            "AcftRegNumber": "N184JB",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-06T04:00:00-08:00",
+            "ATCStatus": "0",
+            "FleetLaunchFlightIndicator": "Y",
+            "CurrentArrStnCode": "BOS",
+            "EstimatedArrivalDelayMinutes": "0",
+            "SourceUpdateDateTime": "2018-11-06T19:55:00Z"
+          }
+        ],
+        "SourceMessageDateTime": "2018-11-06T19:56:00Z",
+        "SchArrStnCode": "BOS",
+        "RON": "true",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "FLL",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-06T05:00:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-06T04:00:00-08:00",
+            "ArrStnCode": "BOS",
+            "LocalDepDate": "2018-11-06",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "TailNumber": "184",
+            "SourceMessageType": "NEW",
+            "SourceFlightLegId": "0005120183",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "POST",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "SourceMessageDateTime": "2018-11-06T19:56:00Z",
+            "CompartmentId": "Y",
+            "AcftRegNumber": "N184JB",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-11-06T19:55:00Z",
+            "EqpmtType": "E90"
+          }
+        ],
+        "ServiceType": "J",
+        "FleetLaunchFlightIndicator": "Y",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "NEW",
+        "FlightType": "SCH",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "2211",
+            "FlightSegDestLocalDateTime": "2018-11-06T05:00:00-08:00",
+            "SourceSystemName": "FliteTrac",
+            "SourceMessageType": "NEW",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "BOS",
+            "FlightSegOriginLocalDateTime": "2018-11-06T04:00:00-08:00",
+            "FlightSegOriginLocalDate": "2018-11-06",
+            "SourceUpdateDateTime": "2018-11-06T19:55:00Z",
+            "FlightSegOriginAirport": "FLL",
+            "SourceMessageDateTime": "2018-11-06T19:56:00Z"
+          }
+        ],
+        "SourceUpdateDateTime": "2018-11-06T19:55:00Z",
+        "EqpmtType": "E90"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "2211",
+    "EventId": "20181106145643108.B6221120181106FLL10.1",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "FLL",
+    "EventTimeStamp": "2018-11-06T11:56:43.109-08:00",
+    "FlightOriginLocalDate": "2018-11-06",
+    "FlightDestStnCode": "BOS",
+    "EventSubType": "|NewFlight",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_2211_2018-11-06"
+},{
+  "partition_key": "B6_2222",
+  "BLOB_NAME": "2018/11/20181106145728766.B6222220181106BOS10.2_Flight",
+  "Flight": {
+    "DataIndicator": {
+      "Value": "ALL",
+      "Name": "Flight"
+    },
+    "ScheduledFlightLeg": [
+      {
+        "FlightLegSeqNumber": "10",
+        "SecureFlightIndicator": "false",
+        "SourceSystemName": "FliteTrac",
+        "OriginatorFlightIndicator": "N",
+        "DomesticArrStnIndictor": "N",
+        "DomesticDepStnIndictor": "Y",
+        "ServiceType": "J",
+        "SchAcftOwner": "B6",
+        "SourceMessageType": "NEW",
+        "FlightType": "SCH",
+        "ScheduledGroundMinutes": "60",
+        "MarketingFlightSegment": [
+          {
+            "MarketingFlightNumber": "2222",
+            "FlightSegDestLocalDateTime": "2018-11-06T07:00:00-08:00",
+            "SourceSystemName": "FliteTrac",
+            "SourceMessageType": "NEW",
+            "MarketingCarrierCode": "B6",
+            "FlightSegDestAirport": "SDQ",
+            "FlightSegOriginLocalDateTime": "2018-11-06T06:00:00-08:00",
+            "FlightSegOriginLocalDate": "2018-11-06",
+            "SourceUpdateDateTime": "2018-11-06T19:56:00Z",
+            "FlightSegOriginAirport": "BOS",
+            "SourceMessageDateTime": "2018-11-06T19:56:00Z"
+          }
+        ],
+        "Status": "ON TIME",
+        "SchLocalDepDateTime": "2018-11-06T06:00:00-08:00",
+        "ScheduledBlockMinutes": "60",
+        "SchDepStnCode": "BOS",
+        "SchLocalDepDate": "2018-11-06",
+        "SchLocalArrDateTime": "2018-11-06T07:00:00-08:00",
+        "CurrentFlightLeg": [
+          {
+            "ActualFlightTimeMinutes": "0",
+            "ActualDepartureDelayMinutes": "0",
+            "DispatchDesk": "DM",
+            "BlueTurnIndicator": "N",
+            "EstimatedDepartureDelayMinutes": "0",
+            "ActualEquipmentType": "E90",
+            "TurnTime": "55",
+            "DoorCloseTime": "08:45 AM",
+            "TailNumber": "184",
+            "ActualFlightType": "SCH",
+            "Status": "On Time",
+            "ArrProgress": "S",
+            "CurrentArrivalDateTime": "2018-11-06T07:00:00-08:00",
+            "DepProgress": "S",
+            "EstimatedGroundMinutes": "60",
+            "EstLocalBoardingDateTime": "Boarding Shortly",
+            "ActualArrivalDelayMinutes": "0",
+            "CurrentDepStnCode": "BOS",
+            "RON": "true",
+            "ActualBlockMinutes": "0",
+            "AcftRegNumber": "N184JB",
+            "ActiveAFLSeqNumber": "1",
+            "CurrentDepartureDateTime": "2018-11-06T06:00:00-08:00",
+            "ATCStatus": "0",
+            "FleetLaunchFlightIndicator": "N",
+            "CurrentArrStnCode": "SDQ",
+            "EstimatedArrivalDelayMinutes": "0",
+            "SourceUpdateDateTime": "2018-11-06T19:56:00Z"
+          }
+        ],
+        "SourceMessageDateTime": "2018-11-06T19:56:00Z",
+        "SchArrStnCode": "SDQ",
+        "RON": "true",
+        "ActualFlightLeg": [
+          {
+            "DepStnCode": "BOS",
+            "SourceSystemName": "FliteTrac",
+            "Fitindicator": "false",
+            "DispatchDeskId": "DM",
+            "ActFlightType": "SCH",
+            "LocalArrDateTime": "2018-11-06T07:00:00-08:00",
+            "SourceFlightLegSeqNumber": "10",
+            "LocalDepDateTime": "2018-11-06T06:00:00-08:00",
+            "ArrStnCode": "SDQ",
+            "LocalDepDate": "2018-11-06",
+            "ServiceType": "J",
+            "ActFlightLegSeqNumber": "1",
+            "TailNumber": "184",
+            "SourceMessageType": "NEW",
+            "SourceFlightLegId": "0005120184",
+            "Atcstatus": "0",
+            "ArrProgress": "S",
+            "DepProgress": "S",
+            "SchFlightType": "SCH",
+            "SourceUpdateUserId": "POST",
+            "ReplacedFromSourceFlightLegSeqNumber": "0",
+            "SourceMessageDateTime": "2018-11-06T19:56:00Z",
+            "CompartmentId": "Y",
+            "AcftRegNumber": "N184JB",
+            "LegStatus": "ON TIME",
+            "SourceUpdateDateTime": "2018-11-06T19:56:00Z",
+            "EqpmtType": "E90"
+          }
+        ],
+        "FleetLaunchFlightIndicator": "N",
+        "SourceUpdateDateTime": "2018-11-06T19:56:00Z",
+        "EqpmtType": "E90"
+      }
+    ],
+    "FlightCarrierCode": "B6",
+    "FlightNumber": "2222",
+    "EventId": "20181106145728766.B6222220181106BOS10.2",
+    "DocumentType": "Flight",
+    "FlightOriginStnCode": "BOS",
+    "EventTimeStamp": "2018-11-06T11:57:28.766-08:00",
+    "FlightOriginLocalDate": "2018-11-06",
+    "FlightDestStnCode": "SDQ",
+    "EventSubType": "|TurnTime",
+    "ChangeIndicator": [
+      {
+        "Name": "SchFltLeg"
+      },
+      {
+        "Name": "ActFltLeg"
+      }
+    ]
+  },
+  "id": "B6_2222_2018-11-06"
+}]

@@ -1,0 +1,3 @@
+C:\Git\SparkStreamingPOC\StreamAnalyticsQueries\ASAApplication\ASAApplication\bin\Debug\ASAApplication
+C:\Git\SparkStreamingPOC\StreamAnalyticsQueries\ASAApplication\ASAApplication\obj\Debug\ASAApplication.asaproj.CoreCompileInputs.cache
+C:\Git\SparkStreamingPOC\StreamAnalyticsQueries\ASAApplication\ASAApplication\obj\Debug\ASAApplication

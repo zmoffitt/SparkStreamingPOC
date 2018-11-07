@@ -1,0 +1,28 @@
+﻿{
+  "EventHubProperties": null,
+  "BlobStorageProperties": null,
+  "SQLDatabaseProperties": {
+    "Database": "Streaming",
+    "Password": null,
+    "Server": "jb-sql-sbp-cse.database.windows.net",
+    "Table": "dbo.StreamAnaAddResult",
+    "User": "cseadmin"
+  },
+  "TableStorageProperties": null,
+  "ServiceBusQueueProperties": null,
+  "ServiceBusTopicProperties": null,
+  "DocumentDbProperties": null,
+  "PowellBIProperties": null,
+  "AzureDataLakeStoreProperties": null,
+  "AzureFunctionProperties": null,
+  "DataSourceCredentialDomain": "57902348-04b8-45bb-8e8d-ee5944a72957.StreamAnalyticsCredential",
+  "Name": "Output1",
+  "DataSourceType": "SQL Database",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Json",
+    "FieldDelimiter": null,
+    "Format": "LineSeparated"
+  },
+  "ScriptType": "Output"
+}

@@ -1,0 +1,33 @@
+﻿SELECT 
+    Input1.Flight.EventId,
+    Input1.Flight.FlightCarrierCode,
+    Input1.Flight.FlightNumber,
+    Input1.Flight.EventTimeStamp,
+    Input1.Flight.EventSubType,
+    Input1.Flight.FlightOriginStnCode,
+    Origin.International as OriginCode_IsInternational,
+    Input1.Flight.FlightDestStnCode,
+    Dest.International as DestinationCode_IsInternational,
+    CASE WHEN SFL.ArrayValue.Status = 'CANCELLED' THEN 1 ELSE 0 END AS CANCELEDINDICATOR,
+    CFL.ArrayValue.ActFlightType,
+    CASE 
+        WHEN AFL.ArrayValue.ActFlightType = 'TCH' THEN 1
+        WHEN AFL.ArrayValue.ActFlightType = 'DVC' THEN 1   
+        WHEN AFL.ArrayValue.ActFlightType = 'OFY' THEN 1   
+        WHEN AFL.ArrayValue.ActFlightType = 'DVH' THEN 1   
+    ELSE 0 
+    END AS DIVERSIONSINDICATOR,
+    CASE WHEN CAST(Input1.Flight.FlightNumber as bigint) < 3000 or CAST(Input1.Flight.FlightNumber as bigint) BETWEEN 8000 AND 8199 then 1 else 0 end as SchFlightIndicator,
+    CAST(CFL.ArrayValue.ActualBlockMinutes as float) - cast(SFL.ArrayValue.ScheduledBlockMinutes as float) AS BlockVariance
+FROM 
+    Input1
+LEFT join
+    Reference as Origin on Input1.Flight.FlightOriginStnCode = Origin.Location_abbr
+LEFT JOIN
+    Reference as Dest on Input1.Flight.FlightDestStnCode = Dest.Location_abbr
+CROSS APPLY
+    GetArrayElements(Input1.Flight.ScheduledFlightLeg) SFL
+CROSS APPLY
+    GetArrayElements(SFL.ArrayValue.CurrentFlightLeg) CFL
+CROSS APPLY
+    GetArrayElements(SFL.ArrayValue.ActualFlightLeg) AFL
