@@ -22,7 +22,7 @@
     <Script Include="Script.asaql" />
   </ItemGroup>
   <ItemGroup>
-    <Configure Include="Inputs\Input1.json">
+    <Configure Include="Inputs\EventHub.json">
       <SubType>Input</SubType>
     </Configure>
     <Configure Include="Inputs\Reference.json">

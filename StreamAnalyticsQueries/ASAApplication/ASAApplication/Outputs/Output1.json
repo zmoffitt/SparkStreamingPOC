@@ -16,7 +16,7 @@
   "AzureDataLakeStoreProperties": null,
   "AzureFunctionProperties": null,
   "DataSourceCredentialDomain": "57902348-04b8-45bb-8e8d-ee5944a72957.StreamAnalyticsCredential",
-  "Name": "Output1",
+  "Name": "SQLDatabase",
   "DataSourceType": "SQL Database",
   "Serialization": {
     "Encoding": "UTF8",

@@ -4,3 +4,4 @@ log.txt
 *.json-e
 .vs/
 Properties/
+ASALocalRun/

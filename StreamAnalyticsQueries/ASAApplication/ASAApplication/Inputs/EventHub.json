@@ -1,0 +1,25 @@
+﻿{
+  "Sample": null,
+  "EventHubProperties": {
+    "ConsumerGroupName": "streamanalytics",
+    "EventHubName": "azfuncevents",
+    "ServiceBusNamespace": "jetblue",
+    "SharedAccessPolicyKey": null,
+    "SharedAccessPolicyName": "RootManageSharedAccessKey"
+  },
+  "BlobStorageProperties": null,
+  "IoTHubProperties": null,
+  "BlobReferenceProperties": null,
+  "DataSourceCredentialDomain": "97763d7a-0852-47b5-9a91-b01d4416a84c.StreamAnalyticsCredential",
+  "Name": "EventHub",
+  "Type": "Data Stream",
+  "DataSourceType": "Event Hub",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Json",
+    "FieldDelimiter": null,
+    "Format": null
+  },
+  "CompresssionType": "None",
+  "ScriptType": "Input"
+}
