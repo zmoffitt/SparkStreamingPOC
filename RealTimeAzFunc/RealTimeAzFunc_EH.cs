@@ -32,37 +32,44 @@ namespace RealTimeAzFunc
 
             try
             {
-                //log.LogInformation(eventGridEvent.Data.ToString());
+                //log.LogInformation(eventGridEvent.Data.ToString()); 
 
                 EventGridData eventGridData = JsonConvert.DeserializeObject<EventGridData>(eventGridEvent.Data.ToString());
-                string fileUrl = eventGridData.url;
-                //log.LogInformation("fileUrl = "+fileUrl);
 
-                //URL Decode it
-                fileUrl = HttpUtility.UrlDecode(fileUrl);
-                string fileLocation = fileUrl.Substring(fileUrl.LastIndexOf(CONTAINER_NAME) + CONTAINER_NAME.Length + 1);
-                //log.LogInformation("fileLocation = " + fileLocation);
+                // Proceed only if event is Blob Created event
+                if(eventGridEvent.EventType == "Microsoft.Storage.BlobCreated")
+                {
+                    string fileUrl = eventGridData.url;
+                    //log.LogInformation("fileUrl = "+fileUrl);
 
-                //Get storage account
-                CloudStorageAccount storageAccount = GetAccount();
+                    //URL Decode it
+                    fileUrl = HttpUtility.UrlDecode(fileUrl);
+                    string fileLocation = fileUrl.Substring(fileUrl.LastIndexOf(CONTAINER_NAME) + CONTAINER_NAME.Length + 1);
+                    //log.LogInformation("fileLocation = " + fileLocation);
 
-                //Get a client and connection to the container
-                CloudBlobClient client = storageAccount.CreateCloudBlobClient();
-                CloudBlobContainer container = client.GetContainerReference(CONTAINER_NAME);
+                    //Get storage account
+                    CloudStorageAccount storageAccount = GetAccount();
 
-                //Get blob file reference
-                var cloudStream = new MemoryStream();
-                await container.GetBlockBlobReference(fileLocation).DownloadToStreamAsync(cloudStream);
-                cloudStream.Seek(0, SeekOrigin.Begin);
+                    //Get a client and connection to the container
+                    CloudBlobClient client = storageAccount.CreateCloudBlobClient();
+                    CloudBlobContainer container = client.GetContainerReference(CONTAINER_NAME);
+
+                    //Get blob file reference
+                    var cloudStream = new MemoryStream();
+                    await container.GetBlockBlobReference(fileLocation).DownloadToStreamAsync(cloudStream);
+                    cloudStream.Seek(0, SeekOrigin.Begin);
+
+                    //Download blob (async but wait for it)
+                    var buffer = new byte[cloudStream.Length];
+
+                    cloudStream.Read(buffer, 0, (int)cloudStream.Length);
+                    //log.LogInformation("Message sent to Event Hub - \n"+ Encoding.UTF8.GetString(buffer));
+
+                    //Return blob as string to Event Hub
+                    return Encoding.UTF8.GetString(buffer);
+                }
+                return "";
                 
-                //Download blob (async but wait for it)
-                var buffer = new byte[cloudStream.Length];
-
-                cloudStream.Read(buffer, 0, (int)cloudStream.Length);
-                //log.LogInformation("Message sent to Event Hub - \n"+ Encoding.UTF8.GetString(buffer));
-                
-                //Return blob as string to Event Hub
-                return Encoding.UTF8.GetString(buffer);
             }
             catch (Exception ex)
             {
