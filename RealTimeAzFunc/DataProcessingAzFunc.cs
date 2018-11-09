@@ -72,10 +72,14 @@ namespace RealTimeAzFunc
                                 PlannedTimeTurn = variable
                             });
 
-                            var httpContent = new StringContent(JsonConvert.SerializeObject(powerBiObj), Encoding.UTF8, "application/json");
+                            var payload = JsonConvert.SerializeObject(powerBiObj);
+                            var httpContent = new StringContent(payload, Encoding.UTF8, "application/json");
 
                             // Send data to PowerBI Stream
-                            await httpClient.PostAsync(powerBiUrl, httpContent);
+                            var result = await httpClient.PostAsync(powerBiUrl, httpContent);
+                            log.LogInformation(result.StatusCode.ToString());
+                            var resultContent = await result.Content.ReadAsStringAsync();                            
+                            log.LogInformation(resultContent);
 
                         }
                         

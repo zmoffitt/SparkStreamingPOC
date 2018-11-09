@@ -1,0 +1,26 @@
+Azure Function
+	- Cheaper
+	- Easier if no time-related calculation needed
+	- Storing state in a db
+	
+Azure SQL
+	- Historical Databricks
+	- Column-store and In-Memory Lock-Free structures
+	- JSON supportStream
+	
+Azure Databricks Structured Streaming
+	- More complex and expensive
+	- Some functions not available on streams
+	- Can do anything 
+
+Stream Analytics
+	- Easier than Spark (LAG support for example)
+	- Use cases must fit the technology perfectly (Mainly data-transformation)
+	
+Power BI 
+	- Support for Streaming (limited) and Hybrid datasets
+	- Dashboard can be created using any available dataset (streaming or not)
+
+Additional notes
+
+Connect and consume messages queued in SB directly (avoid using Blob Store to "simulate" the stream. Use SB Topics instead?)

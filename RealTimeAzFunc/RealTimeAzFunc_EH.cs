@@ -18,6 +18,7 @@ namespace RealTimeAzFunc
 {
     public static class RealTimeAzFunc_EH
     {
+        [Disable]
         [FunctionName("RealTimeAzFunc_EH")]
         [return: EventHub("%EventHubName%", Connection = "EventHubConnectionAppSetting")]
         public static async Task<string> RunAsync([EventGridTrigger]EventGridEvent eventGridEvent,
