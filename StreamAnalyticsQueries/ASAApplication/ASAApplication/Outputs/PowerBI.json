@@ -1,0 +1,25 @@
+﻿{
+  "EventHubProperties": null,
+  "BlobStorageProperties": null,
+  "SQLDatabaseProperties": null,
+  "TableStorageProperties": null,
+  "ServiceBusQueueProperties": null,
+  "ServiceBusTopicProperties": null,
+  "DocumentDbProperties": null,
+  "PowellBIProperties": {
+    "RefreshToken": null,
+    "TokenUserPrincipalName": "damauri@microsoft.com",
+    "TokenUserDisplayName": "Davide Mauri",
+    "Dataset": "Streaming",
+    "Table": "BlockVariance",
+    "GroupId": "97e66479-4ad7-48e6-b643-a1d5cb9f72e3",
+    "GroupName": "JetBlue"
+  },
+  "AzureDataLakeStoreProperties": null,
+  "AzureFunctionProperties": null,
+  "DataSourceCredentialDomain": null,
+  "Name": "PowerBI",
+  "DataSourceType": "Power BI",
+  "Serialization": null,
+  "ScriptType": "Output"
+}

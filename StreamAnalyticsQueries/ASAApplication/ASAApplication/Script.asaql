@@ -1,33 +1,60 @@
-﻿SELECT 
-    Input1.Flight.EventId,
-    Input1.Flight.FlightCarrierCode,
-    Input1.Flight.FlightNumber,
-    Input1.Flight.EventTimeStamp,
-    Input1.Flight.EventSubType,
-    Input1.Flight.FlightOriginStnCode,
-    Origin.International as OriginCode_IsInternational,
-    Input1.Flight.FlightDestStnCode,
-    Dest.International as DestinationCode_IsInternational,
-    CASE WHEN SFL.ArrayValue.Status = 'CANCELLED' THEN 1 ELSE 0 END AS CANCELEDINDICATOR,
+﻿WITH cte as
+(
+SELECT 
+    EH.Flight.EventId,
+    EH.Flight.FlightCarrierCode,
+    EH.Flight.FlightNumber,
+    EH.Flight.EventTimeStamp,
+    EH.Flight.EventSubType,
+    EH.Flight.FlightOriginStnCode,
+    cast(Origin.International as bigint) as OriginCode_IsInternational,
+    EH.Flight.FlightDestStnCode,
+    cast(Dest.International as bigint) as DestinationCode_IsInternational,
+    CASE 
+        WHEN SFL.ArrayValue.Status = 'CANCELLED' THEN 1 
+        ELSE 0 
+    END AS CancelledIndicator,
     CFL.ArrayValue.ActFlightType,
     CASE 
         WHEN AFL.ArrayValue.ActFlightType = 'TCH' THEN 1
         WHEN AFL.ArrayValue.ActFlightType = 'DVC' THEN 1   
         WHEN AFL.ArrayValue.ActFlightType = 'OFY' THEN 1   
         WHEN AFL.ArrayValue.ActFlightType = 'DVH' THEN 1   
-    ELSE 0 
-    END AS DIVERSIONSINDICATOR,
-    CASE WHEN CAST(Input1.Flight.FlightNumber as bigint) < 3000 or CAST(Input1.Flight.FlightNumber as bigint) BETWEEN 8000 AND 8199 then 1 else 0 end as SchFlightIndicator,
+        ELSE 0 
+    END AS DiversionsIndicator,
+    CASE    
+        WHEN CAST(EH.Flight.FlightNumber as bigint) < 3000 or CAST(EH.Flight.FlightNumber as bigint) BETWEEN 8000 AND 8199 then 1 
+    else 0 
+        end as SchFlightIndicator,
     CAST(CFL.ArrayValue.ActualBlockMinutes as float) - cast(SFL.ArrayValue.ScheduledBlockMinutes as float) AS BlockVariance
 FROM 
-    Input1
-LEFT join
-    Reference as Origin on Input1.Flight.FlightOriginStnCode = Origin.Location_abbr
+    EventHub as EH
 LEFT JOIN
-    Reference as Dest on Input1.Flight.FlightDestStnCode = Dest.Location_abbr
+    Reference as Origin on EH.Flight.FlightOriginStnCode = Origin.Location_abbr
+LEFT JOIN
+    Reference as Dest on EH.Flight.FlightDestStnCode = Dest.Location_abbr
 CROSS APPLY
-    GetArrayElements(Input1.Flight.ScheduledFlightLeg) SFL
+    GetArrayElements(EH.Flight.ScheduledFlightLeg) SFL
 CROSS APPLY
     GetArrayElements(SFL.ArrayValue.CurrentFlightLeg) CFL
 CROSS APPLY
     GetArrayElements(SFL.ArrayValue.ActualFlightLeg) AFL
+)
+select
+    *
+into
+    SQLDatabase
+from
+    cte
+select
+    FlightOriginStnCode, 
+    FlightDestStnCode,
+    System.Timestamp as ts,
+    count(*) as WindowCount,
+    avg(BlockVariance) as AvgBlockVariance
+into    
+    PowerBI
+from
+    cte
+group by
+    FlightOriginStnCode, FlightDestStnCode, TUMBLINGWINDOW(hour, 1)
