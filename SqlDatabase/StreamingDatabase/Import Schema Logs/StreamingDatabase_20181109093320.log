@@ -1,0 +1,82 @@
+11/9/2018 1:33:20 PM	This log contains information about the import schema operation into project 'StreamingDatabase' on computer 'HYPERION-DM' by user 'damauri'.
+11/9/2018 1:33:20 PM	Import of database schema has started.
+11/9/2018 1:33:27 PM	Gathering logins
+11/9/2018 1:33:48 PM	Gathering database credentials
+11/9/2018 1:33:48 PM	Gathering database options
+11/9/2018 1:33:48 PM	Gathering generic database scoped configuration option
+11/9/2018 1:33:48 PM	Gathering users
+11/9/2018 1:33:48 PM	Gathering roles
+11/9/2018 1:33:48 PM	Gathering application roles
+11/9/2018 1:33:48 PM	Gathering role memberships
+11/9/2018 1:33:48 PM	Gathering filegroups
+11/9/2018 1:33:48 PM	Gathering full-text catalogs
+11/9/2018 1:33:48 PM	Gathering assemblies
+11/9/2018 1:33:48 PM	Gathering certificates
+11/9/2018 1:33:48 PM	Gathering symmetric keys
+11/9/2018 1:33:48 PM	Gathering encrypted symmetric keys
+11/9/2018 1:33:48 PM	Gathering schemas
+11/9/2018 1:33:48 PM	Gathering XML schema collections
+11/9/2018 1:33:48 PM	Gathering user-defined data types
+11/9/2018 1:33:48 PM	Gathering user-defined types
+11/9/2018 1:33:48 PM	Gathering table types
+11/9/2018 1:33:48 PM	Gathering unique keys for table types
+11/9/2018 1:33:48 PM	Gathering primary keys for table types
+11/9/2018 1:33:48 PM	Gathering indexes for table types
+11/9/2018 1:33:48 PM	Gathering check constraints for table types
+11/9/2018 1:33:48 PM	Gathering default constraints for table types
+11/9/2018 1:33:48 PM	Gathering partition functions
+11/9/2018 1:33:48 PM	Gathering partition schemes
+11/9/2018 1:33:48 PM	Gathering functions
+11/9/2018 1:33:48 PM	Gathering encrypted functions
+11/9/2018 1:33:48 PM	Gathering aggregates
+11/9/2018 1:33:48 PM	Gathering procedures
+11/9/2018 1:33:48 PM	Gathering encrypted procedures
+11/9/2018 1:33:48 PM	Gathering tables
+11/9/2018 1:33:48 PM	Gathering primary keys
+11/9/2018 1:33:48 PM	Gathering unique constraints
+11/9/2018 1:33:48 PM	Gathering foreign keys
+11/9/2018 1:33:48 PM	Gathering default constraints
+11/9/2018 1:33:48 PM	Gathering check constraints
+11/9/2018 1:33:48 PM	Gathering views
+11/9/2018 1:33:48 PM	Gathering encrypted views
+11/9/2018 1:33:48 PM	Gathering indexes
+11/9/2018 1:33:48 PM	Gathering statistics
+11/9/2018 1:33:48 PM	Gathering full-text index stoplists
+11/9/2018 1:33:48 PM	Gathering search property lists
+11/9/2018 1:33:48 PM	Gathering search properties
+11/9/2018 1:33:48 PM	Gathering full-text indexes
+11/9/2018 1:33:48 PM	Gathering column store indexes
+11/9/2018 1:33:48 PM	Gathering spatial indexes
+11/9/2018 1:33:48 PM	Gathering XML indexes
+11/9/2018 1:33:48 PM	Gathering Selective XML indexes
+11/9/2018 1:33:48 PM	Gathering encrypted triggers
+11/9/2018 1:33:48 PM	Gathering triggers
+11/9/2018 1:33:48 PM	Gathering encrypted and clr ddl triggers
+11/9/2018 1:33:48 PM	Gathering ddl triggers
+11/9/2018 1:33:48 PM	Gathering synonyms
+11/9/2018 1:33:48 PM	Gathering defaults
+11/9/2018 1:33:48 PM	Gathering data constraint uddt bindings
+11/9/2018 1:33:48 PM	Gathering rules
+11/9/2018 1:33:48 PM	Gathering data constraint uddt bindings
+11/9/2018 1:33:48 PM	Gathering message types
+11/9/2018 1:33:48 PM	Gathering queues
+11/9/2018 1:33:48 PM	Gathering contracts
+11/9/2018 1:33:48 PM	Gathering services
+11/9/2018 1:33:48 PM	Gathering event notifications
+11/9/2018 1:33:48 PM	Gathering remote service bindings
+11/9/2018 1:33:48 PM	Gathering broker priorities
+11/9/2018 1:33:48 PM	Gathering signatures
+11/9/2018 1:33:48 PM	Gathering data compression options
+11/9/2018 1:33:48 PM	Gathering sequence types
+11/9/2018 1:33:48 PM	Gathering security policies
+11/9/2018 1:33:48 PM	Gather column encryption keys
+11/9/2018 1:33:48 PM	Gathering column master keys
+11/9/2018 1:33:48 PM	Gathering external data sources
+11/9/2018 1:33:48 PM	Gathering external tables
+11/9/2018 1:33:48 PM	Gathering extended properties
+11/9/2018 1:33:51 PM	Gathering logins
+11/9/2018 1:33:52 PM	Scanning project for duplicate elements
+11/9/2018 1:33:52 PM	Finished duplicate element processing
+11/9/2018 1:33:53 PM	Finished importing database.
+11/9/2018 1:33:53 PM	A summary of the import was saved to the following location: C:\Work\jetblue\streaming-poc\SqlDatabase\StreamingDatabase\Import Schema Logs\StreamingDatabase_20181109093320.log
+11/9/2018 1:33:53 PM	Click Finish to continue...
