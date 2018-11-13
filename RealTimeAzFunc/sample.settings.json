@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AzureBlobStorage": "DefaultEndpointsProtocol=https;AccountName=;AccountKey=;EndpointSuffix=core.windows.net",
+    "CONTAINER_NAME": "rtflights",
+    "EventHubName": "azfuncevents",
+    "ConsumerGroup": "azfunc",
+    "EventHubConnectionAppSetting": "Endpoint=sb://jetblue.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=",
+    "sqldb_connection": "Server=tcp:jb-sql-sbp-cse.database.windows.net,1433;Initial Catalog=Streaming;Persist Security Info=False;User ID=;Password=;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+    "PowerBiEndPoint": ""
+  }
+}
