@@ -6,6 +6,8 @@ Here's a description of the files available this folder, along with their purpos
 - org.scalaj:scalaj-http_2.11:2.4.1
 - com.lihaoyi:ujson_2.11:0.6.7
 
+The cluster configuration used top create the samples is available in `cluster-config.json` if needed.
+
 ### stream-processing.dbc
 
 An example that shows how to setup ingestion from EventHub and how data can be aggregated on the fly using Structured Streaming
